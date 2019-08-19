@@ -1,0 +1,80 @@
+package quanlysanpham.ver2;
+
+import java.io.Serializable;
+
+public class SanPham  implements Serializable{
+// Thừa kế mã số và tên từ Doituong_Qlchung
+public String maso;
+public String ten;
+public String loaisanpham;
+public int soluongsanpham;
+public double phantramkhuyenmai;
+public double dongiasanpham;
+
+// Constructor-phuong thuc khoi tao
+public SanPham (String maso, String ten, String loaisanpham, int soluongsanpham, double phantramkhuyenmai, double dongiasanpham) {
+	this.maso = maso;
+	this.ten = ten;
+	this.loaisanpham = loaisanpham;
+	this.soluongsanpham = soluongsanpham;
+	this.phantramkhuyenmai = phantramkhuyenmai;
+	this.dongiasanpham = dongiasanpham;
+	
+}
+public void setMaso(String maso) {
+	this.maso= maso;
+}
+public String getMaso() {
+	return maso;
+}
+
+public void setTen(String ten) {
+	this.ten = ten;
+}
+public String getTen() {
+	return ten;
+}
+//
+public void setLoaisanpham(String loaisanpham ) {
+	this.loaisanpham = loaisanpham;
+}
+public String getLoaisanpham() {
+	return loaisanpham;
+}
+//
+public void setSoluongsanpham(int soluongsanpham) {
+	this.soluongsanpham = soluongsanpham;
+}
+public int getSoluongsanpham() {
+	return soluongsanpham;
+}
+//
+public void setPhantramkhuyenmai(double phantramkhuyenmai) {
+this.phantramkhuyenmai = phantramkhuyenmai;
+
+}
+public double getPhantramkhuyenmai() {
+	return phantramkhuyenmai;
+}
+//
+public void setDongiasanpham(double dongiasanpham) {
+	this.dongiasanpham = dongiasanpham;
+}
+public double getDongiasanpham() {
+	return dongiasanpham;
+	
+}
+
+
+
+public void showInfoSanpham() {
+	System.out.println("Thông tin chi tiết sản phẩm:");
+	System.out.println("Mã số: " +this.getMaso());
+	System.out.println("Tên  : "+this.getTen());
+	System.out.println("Loại sản phẩm: "+this.getLoaisanpham()); 
+	System.out.println("Số lượng sản phẩm: "+this.getSoluongsanpham());
+	System.out.println("Khuyến mãi (%): " + this.getPhantramkhuyenmai());
+	System.out.println("Đơn giá sản phẩm: "+this.getDongiasanpham());
+	System.out.println("---------------------------------------------------\n");
+}
+}
