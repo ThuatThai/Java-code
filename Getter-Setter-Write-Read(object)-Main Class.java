@@ -12,7 +12,7 @@ public class Main {
 public static void main(String[] args) throws IOException {
 	
 	SanPham Xiomi = new SanPham("XM01","Xiaomi Hub","Bộ trung tâm",50,10,1250000);
-	SanPham Broadlink = new SanPham("BR01","RM mini 3","Bộ điều khiển thiết bị hồng ngoại",10,5,450000);
+	//SanPham Broadlink = new SanPham("BR01","RM mini 3","Bộ điều khiển thiết bị hồng ngoại",10,5,450000);
 //Xiomi.showInfo_Chung();
 Xiomi.showInfoSanpham();
 //Broadlink.showInfoSanpham();
