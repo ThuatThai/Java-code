@@ -1,0 +1,20 @@
+/*
+Chương trình viết một hàm mũ (hàm lủy thừa)
+*/
+package HamMu;
+
+public class ExponentPower {
+int base_num, pow_num;
+static int result;
+public static  int Exponent_power(int base_num, int pow_num) {
+result= 1;
+for(int i=1; i<=pow_num;i++) {
+	result= result*base_num;
+}
+return result;
+}
+public static void main(String[] args) {
+	Exponent_power(9,2);
+	System.out.println(result);
+}
+}
