@@ -1,0 +1,51 @@
+package maytinh1;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.util.Scanner;
+import java.awt.event.ActionEvent;
+public class May1P1 {
+static double  a;
+static double b;
+static double c;
+static double delta;
+static double x1;
+static double x2;
+
+public static void Giaipt_bac2() {
+Scanner input = new Scanner(System.in)	;
+System.out.println("Nhập hệ số a: ");
+a=input.nextFloat();
+System.out.println("Nhập hệ số b:  ");
+b= input.nextFloat();
+System.out.println("Nhập hệ số c:  ");
+c=input.nextFloat();
+
+delta = b*b-4*a*c;
+
+System.out.println(" Phương trình bậc 2 của bạn vừa nhập vào : "+ a +"x^2+ " +b+"x+ " +c +"=0");
+if (delta<0) {
+	System.out.println("Delta = " +delta +" <0");
+	System.out.println("Phương trình bậc 2 của bạn vô nghiệm");
+}
+else if(delta == 0) {
+	System.out.println("Delta = 0");
+	System.out.println("Phương trình của bạn có nghiệm kép:" +"x1 = x2 = " +(-b/2/a));
+}
+else {
+	x1 = ((-b)+ Math.sqrt(delta)) / (2*a);
+	x2 = ((-b)- Math.sqrt(delta)) / (2*a);
+	System.out.println("Delta =" +delta +" > 0");
+	System.out.println(" Phương trình có 2 nghiệm phân biệt:");
+	System.out.println(" Nghiệm 1 : x1 = " +x1);
+	System.out.println(" Nghiệm 2 : x2 = " +x2);
+}
+}
+	public static void main(String[] args) {
+		Giaipt_bac2();
+	}
+}
